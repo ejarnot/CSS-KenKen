@@ -1,0 +1,75 @@
+body{
+    margin:0;
+}
+h1{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 250px;
+    width: 100vmin;
+    max-height: 250px;
+    height: 100vmin;
+    margin: 2rem auto;
+    border: 2px solid black;
+}
+
+.grid-items{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    position:relative;
+}
+.prompt{
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    font-size: 12px;
+    font-weight: lighter;
+}
+#box1, #box3, #box5, #box13, #box15{
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+}
+#box2, #box4, #box14{
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+}
+#box9{
+    border: 4px solid black;
+}
+#box6{
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+}
+#box7{
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+}
+#box8, #box10, #box16{
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+#box11{
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+}
+#box12{
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+}
+.grid input{
+    border: none;
+    font-family: monospace;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
